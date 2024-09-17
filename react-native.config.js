@@ -1,10 +1,7 @@
 module.exports = {
   project: {
     android: {
-      packageName: 'com.invoice', // Ensure this is your correct package name
+      packageName: 'com.invoice', // Replace this with your actual package name from `AndroidManifest.xml`
     },
-  },
-  dependencies: {
-    // Add any custom dependencies that need manual linking
   },
 };
