@@ -21,8 +21,9 @@ pipeline {
         }
         stage('build'){
             steps{
+                sh 'sudo chmod -R 777 /var/lib/jenkins/workspace/testing'
                 sh'./gradlew clean'
-                sh'./gradlew --refresh-dependencies'
+                
             }
         }
                 
