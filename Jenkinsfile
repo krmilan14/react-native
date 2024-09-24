@@ -19,6 +19,13 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('build'){
+            steps{
+                sh'./gradlew clean'
+                sh'./gradlew --refresh-dependencies'
+            }
+        }
+                
 
         
     }
