@@ -20,14 +20,6 @@ pipeline {
             }
         }
 
-        stage('Build APK') {
-            steps {
-                dir('android') {
-                    sh './gradlew assembleRelease'
-                }
-            }
-        }
-
         
     }
 
